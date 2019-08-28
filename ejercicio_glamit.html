@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+	function showhideinfo() {
+		if ($('#showhide').is(':visible')) {
+				$('#showhide').fadeOut();
+		} else {
+				$('#showhide').fadeIn();
+		}
+	}	
+</script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+<div class="Navbar">
+   <div class="Navbar__Link Navbar__Link-brand">
+      <img src="images/logo.jpg" class="logo">
+    </div>
+    <div class="Navbar__Link Navbar__Link-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  <nav class="Navbar__Items">
+    <div class="Navbar__Link">
+      <a href="#">NOVEDADES</a>
+    </div>
+    <div class="Navbar__Link">
+      <a href="#">SERVICIOS</a>
+    </div>
+    <div class="Navbar__Link">
+      <a href="#">PRODUCTOS</a>
+    </div>
+    <div class="Navbar__Link">
+      <a href="#">CLIENTES</a>
+    </div>
+    <div class="Navbar__Link ">
+      <a href="#" class="gestionarcontacto2 alignright">CONTACTO</a>
+    </div>            
+  </nav>
+    <div class="Navbar__Link">
+      <a href="#" class="gestionarcontacto1">CONTACTO</a>
+    </div>
+</div>
+
+<div class="flex-row-container">
+
+  <div class="flex-row-item1"></div>
+  <div class="flex-row-item2">
+	  	<br><img src="images/imagen.jpg" class="imagenresponsive" onClick="showhideinfo();"><br>
+
+
+<div class="flex-row-container" id="showhide">
+
+		<div class="flex-row-item3 fecha">
+			<br>31/01/2014
+			<h1 class="titular">
+				Evolucion permanente por objetivos online
+			</h1>
+			<br>
+			<img src="images/avatar.jpg" align="left" class="imagenavatar"><span class="firma">Sergio<br>Sanchez<span>
+		</div>  
+		<div class="flex-row-item2 fecha interlineado">
+			<p>Lorem ipsum dolor sit amet consectetur, adipiscing elit leo aptent, erat per torquent dignissim. Luctus leo magna potenti volutpat fermentum sagittis pulvinar, non cursus id at enim placerat, pretium dis tortor quisque massa dapibus. Rutrum ultricies dictumst auctor enim at habitasse imperdiet, magnis cubilia sagittis semper varius mi tempus lobortis, massa inceptos dignissim odio dictum fusce.</p><p>Rutrum ultricies dictumst auctor enim at habitasse imperdiet, magnis cubilia sagittis semper varius mi tempus lobortis, massa inceptos dignissim odio dictum fusce.</p>
+		</div>
+
+</div>
+
+
+  </div>
+  <div class="flex-row-item1"></div>
+
+</div>
+
+<script type="text/javascript">
+	function classToggle() {
+	  const navs = document.querySelectorAll('.Navbar__Items')
+	  
+	  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+	}
+
+	document.querySelector('.Navbar__Link-toggle')
+	  .addEventListener('click', classToggle);
+	
+</script>
+
+
+</body>
+</html>
